@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/start_screen_logo" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ivLogo"
+        app:layout_constraintEnd_toEndOf="@id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/lato_black_italic"
+        android:textSize="20sp"
+        android:text="Enjoy Food from your Favourite\nRestarautn at Home" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        app:layout_constraintStart_toStartOf="@id/tv1"
+        app:layout_constraintEnd_toEndOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:text="Next"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/tv2"
+        android:background="@drawable/green_button_gradient" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Designed By\nDevansh Gaur"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@id/btnNext"
+        app:layout_constraintEnd_toEndOf="@id/btnNext"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
