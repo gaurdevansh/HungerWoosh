@@ -12,6 +12,9 @@
         android:theme="@style/Theme.HungerWoosh"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".StartActivity"
             android:exported="false" />
         <activity
@@ -25,7 +28,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
