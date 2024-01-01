@@ -52,6 +52,4 @@
         app:layout_constraintEnd_toEndOf="@id/ivAppLogo"
         android:layout_marginBottom="40dp"/>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignActivity">
 
     <ImageView
         android:id="@+id/ivLogo"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/start_screen_logo"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:id="@+id/tv1"
@@ -40,10 +40,10 @@
         android:fontFamily="@font/lato_bold"
         android:textSize="20sp"
         android:textColor="@color/textColor"
-        android:text="Login To Your Account" />
+        android:text="Sign Up Here" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etName"
         android:layout_width="325dp"
         android:layout_height="57dp"
         app:layout_constraintTop_toBottomOf="@id/tv2"
@@ -53,11 +53,28 @@
         android:fontFamily="@font/lato_regular"
         android:drawablePadding="15dp"
         android:background="@drawable/edit_text_shape"
+        android:drawableLeft="@drawable/ic_person"
+        android:elevation="5dp"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@id/tv2"
+        app:layout_constraintEnd_toEndOf="@id/tv2" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        android:layout_marginTop="12dp"
+        android:hint="Email"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/lato_regular"
+        android:drawablePadding="15dp"
+        android:background="@drawable/edit_text_shape"
         android:drawableLeft="@drawable/ic_email"
         android:elevation="5dp"
         android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="@id/tv2"
-        app:layout_constraintEnd_toEndOf="@id/tv2" />
+        app:layout_constraintStart_toStartOf="@id/etName"
+        app:layout_constraintEnd_toEndOf="@id/etName" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -69,10 +86,10 @@
         android:drawablePadding="15dp"
         android:background="@drawable/edit_text_shape"
         android:paddingLeft="15dp"
-        android:inputType="textPassword"
         android:fontFamily="@font/lato_regular"
         android:drawableLeft="@drawable/ic_lock"
         android:elevation="5dp"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@id/etEmail"
         app:layout_constraintEnd_toEndOf="@id/etEmail" />
 
@@ -96,7 +113,8 @@
         app:layout_constraintStart_toStartOf="@id/tv3"
         app:layout_constraintEnd_toEndOf="@id/tv3"
         android:fontFamily="@font/lato_black_italic"
-        android:text="Continue With" />
+        android:textSize="18sp"
+        android:text="Sign Up With" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnGoogle"
@@ -106,6 +124,7 @@
         android:layout_marginTop="16dp"
         android:text="Google"
         android:textAllCaps="false"
+        android:background="@color/white"
         android:fontFamily="@font/lato_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnFacebook" />
@@ -118,17 +137,18 @@
         android:layout_marginTop="16dp"
         android:text="Facebook"
         android:textAllCaps="false"
+        android:background="@color/white"
         android:fontFamily="@font/lato_regular"
         app:layout_constraintStart_toEndOf="@id/btnGoogle"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
-        android:layout_width="152dp"
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="175dp"
         android:layout_height="57dp"
         app:layout_constraintTop_toBottomOf="@id/btnGoogle"
-        android:layout_marginTop="16dp"
-        android:text="Login"
+        android:layout_marginTop="32dp"
+        android:text="Create Account"
         android:fontFamily="@font/lato_bold"
         android:textColor="@color/white"
         android:textAllCaps="false"
@@ -138,29 +158,16 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/tvDontHaveAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin"
-        app:layout_constraintStart_toStartOf="@id/btnLogin"
-        app:layout_constraintEnd_toEndOf="@id/btnLogin"
-        android:text="Don't Have an Account?"
-        android:textSize="14sp"
-        android:fontFamily="@font/lato_regular"
-        android:textColor="@color/textColor"
-        android:layout_marginTop="15dp" />
-
-    <TextView
-        android:id="@+id/tv5"
+        android:id="@+id/tvAlreadyHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Designed By\nDevansh Gaur"
+        android:text="Already Have An Account"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textColor="@color/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="25dp"/>
+        android:layout_marginBottom="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

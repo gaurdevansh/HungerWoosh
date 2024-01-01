@@ -50,10 +50,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="Designed By\nDevansh Gaur"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textColor="@color/textColor"
         app:layout_constraintStart_toStartOf="@id/btnNext"
         app:layout_constraintEnd_toEndOf="@id/btnNext"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
