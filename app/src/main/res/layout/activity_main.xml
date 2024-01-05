@@ -14,6 +14,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lato_regular"
         android:text="@string/explor_food"
         android:textSize="24sp" />
 
