@@ -6,4 +6,5 @@
     <string name="explor_food">Explore Your Food Options</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sample_text">To provide you with the best of experience, we need you permission to access your devices location. By enabling location services.</string>
+    <string name="congrats">Congratulations!\nYour Order has been Placed.</string>
 </resources>

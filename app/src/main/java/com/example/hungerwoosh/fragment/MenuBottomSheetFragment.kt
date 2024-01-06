@@ -1,10 +1,11 @@
-package com.example.hungerwoosh
+package com.example.hungerwoosh.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.hungerwoosh.R
 import com.example.hungerwoosh.adapter.MenuAdapter
 import com.example.hungerwoosh.databinding.FragmentMenuBottomSheetBinding
 import com.example.hungerwoosh.model.MenuItem

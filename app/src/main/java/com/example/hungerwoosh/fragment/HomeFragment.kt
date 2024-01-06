@@ -1,7 +1,6 @@
 package com.example.hungerwoosh.fragment
 
 import android.os.Bundle
-import android.renderscript.ScriptGroup.Binding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.hungerwoosh.MenuBottomSheetFragment
 import com.example.hungerwoosh.R
 import com.example.hungerwoosh.adapter.PopularFoodAdapter
 import com.example.hungerwoosh.databinding.FragmentHomeBinding
