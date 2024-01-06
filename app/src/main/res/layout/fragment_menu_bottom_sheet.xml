@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cart"
+        android:text="Menu"
         android:fontFamily="@font/lato_regular"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"

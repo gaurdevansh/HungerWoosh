@@ -46,6 +46,7 @@
                 android:layout_weight="1"
                 android:paddingStart="8dp"
                 android:text="Name"
+                android:textColor="@color/black"
                 android:fontFamily="@font/lato_regular"/>
 
             <EditText
@@ -55,6 +56,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:ems="10"
+                android:textColor="@color/black"
                 android:hint="Name"
                 android:inputType="text" />
 
@@ -74,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingStart="8dp"
+                android:textColor="@color/black"
                 android:fontFamily="@font/lato_regular"
                 android:text="Address" />
 
@@ -84,6 +87,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:ems="10"
+                android:textColor="@color/black"
                 android:hint="@string/sample_text"
                 android:layout_marginVertical="5dp"
                 android:inputType="textMultiLine" />
@@ -104,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingStart="8dp"
+                android:textColor="@color/black"
                 android:fontFamily="@font/lato_regular"
                 android:text="Phone" />
 
@@ -114,6 +119,7 @@
                 android:layout_weight="1"
                 android:background="@color/transparent"
                 android:ems="10"
+                android:textColor="@color/black"
                 android:hint="2354235423"
                 android:inputType="phone" />
 
@@ -133,6 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingStart="8dp"
+                android:textColor="@color/black"
                 android:fontFamily="@font/lato_regular"
                 android:text="Payment Method" />
 
@@ -159,6 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingStart="8dp"
+                android:textColor="@color/black"
                 android:fontFamily="@font/lato_regular"
                 android:text="Total Amount" />
 

@@ -2,6 +2,7 @@ package com.example.hungerwoosh.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import com.example.hungerwoosh.model.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -17,6 +18,7 @@ import com.example.hungerwoosh.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
+    private lateinit var popularFoodItems: ArrayList<MenuItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,13 +66,12 @@ class HomeFragment : Fragment() {
     }
 
     private fun displayPopularFoodItems() {
-        val foodNames = listOf("Burger", "Sandwich", "Momos", "Fries")
-        val prices = listOf("$5", "$7", "$8", "$10")
-        val popularImages = listOf(R.drawable.burger,
-            R.drawable.sanwich,
-            R.drawable.momo,
-            R.drawable.fries)
-        val adapter = PopularFoodAdapter(foodNames, popularImages, prices)
+        popularFoodItems = ArrayList()
+        popularFoodItems.add(MenuItem("Burger", "$5", R.drawable.burger))
+        popularFoodItems.add(MenuItem("Sandwich", "$7", R.drawable.sanwich))
+        popularFoodItems.add(MenuItem("Momo", "$8", R.drawable.momo))
+        popularFoodItems.add(MenuItem("Fries", "$10", R.drawable.fries))
+        val adapter = PopularFoodAdapter(popularFoodItems, requireContext())
         binding.popularFoodRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.popularFoodRecyclerView.adapter = adapter
     }

@@ -12,11 +12,14 @@
         android:theme="@style/Theme.HungerWoosh"
         tools:targetApi="31">
         <activity
+            android:name=".FoodDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".PayOutActivity"
             android:exported="false" />
         <activity
             android:name=".ChooseLocationActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SignActivity"
             android:exported="false" />
@@ -28,7 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

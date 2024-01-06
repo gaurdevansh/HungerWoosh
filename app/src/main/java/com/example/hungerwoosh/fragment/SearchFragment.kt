@@ -50,7 +50,7 @@ class SearchFragment : Fragment() {
         originalMenuItems.add(MenuItem("Sandwich", "$7", R.drawable.sanwich))
         originalMenuItems.add(MenuItem("Momo", "$8", R.drawable.momo))
         originalMenuItems.add(MenuItem("Fries", "$10", R.drawable.fries))
-        adapter = MenuAdapter(filteredMenuItems)
+        adapter = MenuAdapter(filteredMenuItems, requireContext())
         binding.searchRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.searchRecyclerView.adapter = adapter
     }

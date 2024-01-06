@@ -18,7 +18,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/imageCardView"
             android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:layout_marginStart="16dp"
             app:cardCornerRadius="15dp"
@@ -39,8 +39,9 @@
             android:id="@+id/tvNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="16dp"
             android:text="notificaiton"
+            android:maxLines="2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageCardView"
             app:layout_constraintTop_toTopOf="parent" />
