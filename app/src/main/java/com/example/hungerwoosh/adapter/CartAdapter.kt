@@ -32,8 +32,26 @@ class CartAdapter(private val cartItems: MutableList<CartItem>) : RecyclerView.A
                 cartItemPrice.text = cartItems[position].price
                 foodPoster.setImageResource(cartItems[position].image)
                 tvQuanity.text = quantity.toString()
+                decreaseBtn.setOnClickListener {
+                    if(itemQuantities[position] > 1) {
+                        itemQuantities[position]--
+                        tvQuanity.text = itemQuantities[position].toString()
+                    }
+                }
+                addBtn.setOnClickListener {
+                    if(itemQuantities[position] < 10) {
+                        itemQuantities[position]++
+                        tvQuanity.text = itemQuantities[position].toString()
+                    }
+                }
+                removeBtn.setOnClickListener {
+                    if(adapterPosition != RecyclerView.NO_POSITION) {
+                        cartItems.removeAt(position)
+                        notifyItemRemoved(position)
+                        notifyItemRangeChanged(position, cartItems.size)
+                    }
+                }
             }
         }
-
     }
 }

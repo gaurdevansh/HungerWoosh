@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.hungerwoosh.MenuBottomSheetFragment
 import com.example.hungerwoosh.R
 import com.example.hungerwoosh.adapter.PopularFoodAdapter
 import com.example.hungerwoosh.databinding.FragmentHomeBinding
@@ -35,6 +36,15 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        displayFoodBanner()
+        displayPopularFoodItems()
+        binding.viewMenuBtn.setOnClickListener {
+            val bottomSheetDialog = MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager, "MenuItems")
+        }
+    }
+
+    private fun displayFoodBanner() {
         val imageList = ArrayList<SlideModel>()
         imageList.add(SlideModel(R.drawable.banner1, ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner2, ScaleTypes.FIT))
@@ -53,6 +63,9 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(), itemMessage, Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    private fun displayPopularFoodItems() {
         val foodNames = listOf("Burger", "Sandwich", "Momos", "Fries")
         val prices = listOf("$5", "$7", "$8", "$10")
         val popularImages = listOf(R.drawable.burger,
@@ -62,7 +75,6 @@ class HomeFragment : Fragment() {
         val adapter = PopularFoodAdapter(foodNames, popularImages, prices)
         binding.popularFoodRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.popularFoodRecyclerView.adapter = adapter
-
     }
 
 }
