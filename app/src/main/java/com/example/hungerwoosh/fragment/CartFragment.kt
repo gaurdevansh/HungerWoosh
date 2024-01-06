@@ -30,6 +30,10 @@ class CartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setUpCartRecyclerView()
+    }
+
+    private fun setUpCartRecyclerView() {
         cartItems = ArrayList()
         cartItems.add(CartItem("Burger", "$5", R.drawable.burger))
         cartItems.add(CartItem("Sandwich", "$7", R.drawable.sanwich))
