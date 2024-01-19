@@ -80,13 +80,27 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="32dp"
                 app:cardCornerRadius="20dp"
+                android:layout_marginTop="16dp"
                 app:cardBackgroundColor="#4CAF50">
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/receivedBtn"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                app:layout_constraintTop_toBottomOf="@id/orderStatus"
+                app:layout_constraintStart_toStartOf="@id/orderStatus"
+                app:layout_constraintEnd_toEndOf="@id/orderStatus"
+                android:text="Received"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/add_to_cart_shape"
+                android:fontFamily="@font/lato_regular"
+                android:textAllCaps="false" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
