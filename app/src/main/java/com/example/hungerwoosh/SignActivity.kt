@@ -36,7 +36,6 @@ class SignActivity : AppCompatActivity() {
         }
 
         binding.tvAlreadyHaveAccount.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
